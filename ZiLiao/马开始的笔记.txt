@@ -1,0 +1,296 @@
+gnate-river.github.io/jquery
+
+http://images.weserv.nl/   网站缓存图片的网站  使用时在后面加上/?url=图片名字
+
+nate-river.github.io/music
+
+nate-river.github.io/blog
+
+http://nete-river.github.io/music/
+
+nate-river.github.io/css3
+
+http://materializecss.com/
+
+www.jq22.com
+
+www.bootcdn.cn
+
+momentjs.com   js库
+
+materializecss.com
+
+http://192.168.3.152:8081
+
+
+www.bang-olufsen.com/zh/beolink-multiroom
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+百度搜索nodejs.org    nodejs安装 
+在cmd里 node -v 测试node.js是否安装成功
+在cmd上安装的用node-sass -v测试是否安装成功 
+
+*************************************************
+
+
+安装好之后再cmd中安装
+npm install -g cnpm
+安装sass
+cnpm install -g node-sass
+npm -v测试npm安装是否成功
+
+
+
+
+*************************************************
+
+
+
+sass scss替换css格式
+node-sass -w xxx.scss xxx.css
+node-sass -w xxx.scss xxx.css --output-style expanded
+
+
+
+**********************************************************
+下载模版的网站
+https://dribbble.com/   搜blog
+www.mobanwang.com
+www.siteinspire.com
+down.drame.cn
+
+swiper插件查询
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+前端开发必须要用的网站
+www.stackoverflow.com
+www.google.com
+www.github.com
+我的域名doumaimusics
+密码：1234567890qwertyuiop
+作用：
+版本控制、记录、开元代码存放地址
+关注：jquery、bootstrap、angular.js、react
+githun中只有在gh-pages中访问
+传的时候必须是index.html名称  必须写在第一个，其他的可以是文件夹
+
+
+
+mdn background-size在百度上查询属性。
+
+http://www.iconfont.cn/字体图标
+
+作业：1、蛇头经过的div旁边动画
+      2、投放食物的地方动画
+      3、背景部分图片
+      4、暂停/开始按钮（空格快捷键）游戏结束提示 重新开始按钮；
+      5、精致
+www.dribble.com
+www.behance.net
+www.500px.com
+www.github.com
+
+
+http://www.laolu123.com/doc/ 学习网站
+
+http://www.phpcms.cn
+
+一、什么是web服务器？他是做什么的？把自己的东西分享给别人
+  wamp  web服务器工具组成
+  window (操作系统)
+  apache （web服务器）
+  mysql （数据库）
+  php  （在命令刚运行的一门语言）
+
+  通过wamp打开
+  将要被方向的文件放在www directory文件夹下
+  www directory (web服务器最后反向出去的那个文件夹，如果有index.html 文件，用户会看到index.html的渲染结果)
+  ipconfig  在CMD中获取到IP  把ip告诉别人
+  自己如何访问？  127.0.0.0或者loaclhost
+
+二、什么是动态网站？什么是静态网页？
+
+ url 统一资源定位符
+
+ <?php echo date('Y-m-d i:s')  ?> php设置时间；
+
+三、phpcms 安装流程
+
+    1、解压得到两个文件夹
+    
+    2、redeme可以删除（没用）
+
+    3、拷贝install_package文件夹下所有内容
+ 
+    4、拷贝到wamp www directory 打开服务器 分享出去
+
+    5、自己访问   loaclhost （/index.html）
+
+    6、按照引导一直点击下一步
+
+    7、（全新安装 ）
+    
+    8、phpcms phpcms  //localhost/amdin.php
+
+    9、登录后台  账户 phpcms  密码 phpcms
+
+    localhost/admin.php 这个是修改数据库的 
+
+    localhost/index.php 这个是展示页面的
+     
+   两个重要目录
+    D\wamp\www\phpcms\templates\default\content
+    D:\wamp\www\statics
+   
+   几个重要的变量
+    ｛css_PATH｝ 引入CCS
+
+    {JS_PATH}    引入JS
+
+    {IMG_PATH}   引入图片
+
+     header.html 头部     调用头部{template "content","header"}
+     index.html  中间内容
+     footer      尾部     调用尾部{template "content","footer"}
+
+
+四、管理页面中的链接步骤：
+    1、创建模型
+    2、category_xxx.html   list_xxx.html   show_xxx.html
+    3、模型的名字  模型的数据表名 创建模型的时候选择模板
+    4、新建栏目 模型选择刚创建的 （记得更新栏目缓存）、
+    5、管理内容 点击栏目名字左侧的+号  给这个栏目添加列表内容
+
+    6、转入代码  前台
+    7、header.html
+      {pc:content action="category"  catid="0"}
+        {php print_r($data)}<<<<<<<<<<这个是调试代码
+
+       {loop $data $r}
+         <a href="$r['url']">{$r['catname']}</a>
+       {/loop}
+      {/pc}
+
+    8、在list_xxx.html中把这个栏目下的列表内荣读取出来
+      {pc:content action="lists" catid=$catid}
+       {loop $data $r}
+         <a href="$r['url']">{$r['title']}</a>
+        {/loop}
+       {/pc}
+
+     9、在show_xxx.html中把列表中的具体内容读取出来
+        {$content} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+绿豆帐号
+账号：75792894@qq.com
+密码：xiaohai123
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+
+
+
+
+
+****************************************************************************
+
+8.3日
+  全局css属性把基本的html标签优化   组件  javascript插件  
+normalize.css解决让所有标签在各个浏览器保持一致性，现代浏览器兼容性小问题 
+
+css放在less里   
+
+
+v3.bootcss.com css里了解  .containet
+                     响应式
+                     栅格系统
+                     表格
+                     表单
+                     按钮、图片、辅助类
+                     组件里全部练习
+       javascript插件    轮播图（）、弹出框、滚动监听
+
+
+fullpage.js jquery插件
+
+
+
+——————————————————————————————————————————————————————
+——————————————————————————————————————————————————————
+http://www.ngnice.com/       anguler.js库
+——————————————————————————————————————————————————————
+——————————————————————————————————————————————————————
+
+
+
+
+
+
+
+node.js做服务器流程
+把文件拉在cmd，在路径前面加上cd，回车，
+1、用npm init 初始化项目，会生成一个package.json配置文件（很重要的一个文件），用来记录项目相关的信息和项目依赖的第三方库
+2、用npm install express --save安装一个js库，（该库可类比JQUERY理解，JQUERY提供很多方法让我们操作页面元素），
+   express提供很多方法让我们处理http请求。
+3、用npm install mysql --save 安装一个nodejs库，（该库可类比JQUERY理解，JQUERY提供很多方法让我们操作页面元素），
+   mysql提供很多方法让我们操作mysql数据库
+4、用这些库写一段能处理http请求的代码和一些操作数据库的代码，至此，一个web服务器就搭建成功了
+
+在server.js里运行
+
+   //cmd后台运行代码 node server.js
+//页面后台调试ajax  Network里调试
+var express = require('express');
+var app = express();
+app.get('/',function(req,res){   //请求 和回答
+//	res.send('hello world');
+    res.sendFile(__dirname+'/index.html');
+});
+app.get('/me',function(req,res){
+	res.send('ni hao！');
+})
+//监听本地3000端口
+app.listen('3000',function(){
+	console.log('express is listening 3000 port');
+})
+url统一资源定位符
+访问一个网页发生的事情：浏览器：地址找资源  窗口绘制    HTTP端口，http请求，通过网络用字符串向服务器发送请求，服务器回复一段文本流，link标签也能发起请求
+
+
+
+15202260401m@sina.cn
+
+
+canvas-sketeh
+
+
+
+
+
+vue安装流程
+
+git    https://github.com/vuejs/vue下载
+
+npm安装：npm install vue
+     # 全局安装 vue-cli
+$ npm install --global vue-cli
+# 创建一个基于 webpack 模板的新项目
+$ vue init webpack my-project
+# 安装依赖，走你
+$ cd my-project
+$ npm install
+$ npm run dev
+
+开发版本
+重要: Github 仓库的 /dist 文件夹只有在新版本发布时才会更新。如果想要使用 Github 上 Vue 最新的源码，你需要自己构建。
+git clone https://github.com/vuejs/vue.git node_modules/vue
+cd node_modules/vue
+npm install
+npm run build
+
+bower
+# 最新稳定版本
+$ bower install vue

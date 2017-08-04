@@ -1,0 +1,59 @@
+body,div,p,h1,h2,h3,h4,h5,h6,span,label,input,i,ul,li,dl,dt,dd,ol,select,option,table,tr,td,tt,th,tbody,strong,textarea{
+    padding:0;margin: 0;list-style: none;
+}
+body{
+   font-family: 'microsoft yahei',"微软雅黑",Verdana,Arial,Helvetica,sans-serif;
+   background: url(../img/bg.gif) repeat;
+}
+a{text-decoration:none;color: #333;}
+img{border: none;}
+i{font-style: none;}
+@mixin zuoyou{    //左右居中定位
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin shangxia{  //上下居中定位
+    position:absolute;
+    top:0;bottom:0;
+    margin:auto;
+}
+@mixin zhong{ //正中间定位
+    position:absolute;
+    left:0;top:0;
+    right:0;bottom:0;
+    margin:auto;
+}
+@mixin gai{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;top:0;
+    margin: auto;
+}
+//清除浮动的类
+%clear{
+    content: '.';
+    display:block;
+    clear:both;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+}
+.cleartfix:after{
+    @extend %clear;
+}
+
+@mixin userem($size){
+    $list:2048px,1920px,1600px,1400px,1242px,1140px,1280px,1024px,1080px,960px,800px,768px,736px,732px,720px,667px,640px,600px,568px,540px,533px,480px,435px,414px,412px,400px,385px,384px,375px,360px,320px,300px,240px;
+    @each $i in $list{
+        @media screen and (max-width:#{$i}){
+            html{
+                font-size: 100px * ($i/$size);
+            }
+        }
+    }   
+}
+@include userem(750px);
+ 

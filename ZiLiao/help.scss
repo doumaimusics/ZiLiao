@@ -1,0 +1,126 @@
+//清除浏览器默认的margin，padding值
+body, p, h1, h2, h3, h4, h5, h6, span, label, input, i, ul, li, dl, dt, dd, ol, select, option, table, tr, td, tt, th, tbody, strong, textarea {   
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    
+//h1~~~~~~~~~h6的默认字体样式
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+
+//设置网页字体
+body{font-family: arial,verdana,helvetica,sans-serif;}
+
+//当用户点击iOS的Safari浏览器链接 去除默认的背景颜色
+a{
+    -webkit-tap-highlight-color: transparent;
+    text-underline: none;
+}
+
+//去掉图片默认边框
+img{border: none;}
+
+//去除i,em标签的默认样式
+i,em{font-style: normal;}
+
+//去除表单的默认样式
+input,label,select,option,textarea{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;//去除按钮的默认样式
+    -webkit-tap-highlight-color: rgba(0,0,0,0);//移动端去除点击表单元素时默认的背景
+    -webkit-tap-highlight-color: transparent; //移动端去除点击表单元素时默认的背景
+}
+
+//把padding值算在元素的本身
+*{box-sizing: border-box;}
+
+//表单元素placeholder占位符字体颜色设置
+::-webkit-input-placeholder{  //webkit browsers
+    color: #999;
+}
+:-moz-placeholder{//mozilla firefox 4 to 18
+    color: #999;
+}
+::-moz-placeholder{ //Mozilla firefox 19+
+    color: #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #999; 
+} 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #999; 
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #999; 
+}
+
+//清楚浮动伪类
+.clearfix{
+    zoom: 1;
+}
+.clearfix:after{
+   content: '';
+   display:block;
+   clear: both;
+   height: 0;
+   line-height: 0;
+   visibility: hidden;
+}
+//sasa清楚浮动的写法
+%clear{
+     content: '.';
+   display:block;
+   clear: both;
+   height: 0;
+   line-height: 0;
+   visibility: hidden;
+}
+
+.clearfix:after{
+    @extend %clear;
+}
+//移动端设置页面设置各种屏幕利用sass宏@mixin和include
+@mixin userem($size){
+    $list:2048px,1920px,1600px,1400px,1242px,1140px,1280px,1024px,1080px,960px,800px,768px,736px,732px,720px,667px,640px,600px,568px,540px,533px,480px,435px,414px,412px,400px,385px,384px,375px,360px,320px,300px,240px;
+    @each $i in $list{
+        @media screen and (max-width:#{$i}){
+            html{
+                font-size: 100px *($i/$size);
+            }
+        }
+    }
+}
+@include userem(750px);
+
+
+
+//定位的宏
+@mixin zuoyou{    //左右居中定位
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin shangxia{  //上下居中定位
+    position:absolute;
+    top:0;bottom:0;
+    margin:auto;
+}
+@mixin zhong{ //正中间定位
+    position:absolute;
+    left:0;top:0;
+    right:0;bottom:0;
+    margin:auto;
+}
+@mixin gai{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;top:0;
+    margin: auto;
+}
+
+//强制文本不换行
+{
+    white-space: nowrap;
+}
